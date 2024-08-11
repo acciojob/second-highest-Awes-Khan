@@ -10,6 +10,9 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+				if(num.every((a)=> a==arr[0]) || arr.length <= 1) return -Infinity;
+			    let max = Math.max(...arr);
+				return Math.max(...arr.filter((a)=>a!=max));;
 			
 		}
 
